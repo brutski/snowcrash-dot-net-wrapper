@@ -18,7 +18,7 @@ To execute tests make sure to specify `snowcrashCLR.tests\snowcrashCLR.runsettin
 in `Test->Test Settings->Select Test Settings File` Visual Studio menu.
 
 
-## Contributing
+## Contributors
 
 This project made possible in part by [Medidata Solutions](http://twitter.com/medidata)
 
