@@ -51,6 +51,7 @@ namespace snowcrashCLR{
         void wrap(const snowcrash::Action &action) {
             name = gcnew String(action.name.c_str());
             description = gcnew String(action.description.c_str());
+            method = gcnew String(action.method.c_str());
 
             parameters = gcnew vector<Parameter^>();
             for(snowcrash::Collection<snowcrash::Parameter>::const_iterator parameterIterator = action.parameters.begin();
