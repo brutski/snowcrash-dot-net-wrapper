@@ -28,7 +28,7 @@ namespace snowcrashCLR.tests {
 
         [TestMethod]
         public void returns_valid_action_method() {
-            Assert.IsNull(_action.method);
+            Assert.AreEqual("GET", _action.method);
         }
 
         [TestMethod]
