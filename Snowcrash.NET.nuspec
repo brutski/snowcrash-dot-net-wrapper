@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Snowcrash.NET</id>
         <version>1.0.0</version>
@@ -10,8 +10,11 @@
         <iconUrl>https://camo.githubusercontent.com/a38e9423fc512f02a5d1e1509c9fce68036d414f/68747470733a2f2f7261772e6769746875622e636f6d2f617069617279696f2f6170692d626c75657072696e742f6d61737465722f6173736574732f6c6f676f5f617069626c75657072696e742e706e67</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>Snow Crash is the reference API Blueprint parser built on top of the Sundown Markdown parser.</description>
+        <releaseNotes>This version is from release x32 compiled binaries. There is not x64 support for now. I will plan to add it as soon as possible.</releaseNotes>
     </metadata>
     <files>
-        <file src="lib\net\_._" target="lib\net\_._" />
+        <file src="Release\lib\libsnowcrash.lib" target="lib\net\lib\libsnowcrash.lib" />
+        <file src="Release\lib\sundown.lib" target="lib\net\lib\sundown.lib" />
+        <file src="Release\snowcrashCLR.dll" target="lib\net\snowcrashCLR.dll" />
     </files>
 </package>
