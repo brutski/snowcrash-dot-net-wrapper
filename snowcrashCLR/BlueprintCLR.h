@@ -64,6 +64,12 @@ namespace snowcrashCLR {
 			return resourceGroups;
 		}
 
+		~Blueprint()
+		{
+			delete metadata;
+			delete resourceGroups;
+		}
+
 		/**
 		 *	\brief	Wrap Snow Crash Blueprint.
 		 *	\param	blueprint	A Snow Crash blueprint to wrap.

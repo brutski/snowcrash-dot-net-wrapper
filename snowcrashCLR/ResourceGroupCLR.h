@@ -29,6 +29,11 @@ namespace snowcrashCLR{
             return resources;
         }
 
+		~ResourceGroup()
+		{
+			delete resources;
+		}
+
 		void wrap(const snowcrash::ResourceGroup &group)
 		{
 			// Wrap Group Name

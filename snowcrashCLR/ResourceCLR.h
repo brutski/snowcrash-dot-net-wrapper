@@ -50,6 +50,13 @@ namespace snowcrashCLR{
             return actions;
         }
 
+		~Resource()
+		{
+			delete parameters;
+			delete headers;
+			delete actions;
+		}
+
         void wrap(const snowcrash::Resource &resource) {
             name = gcnew String(resource.name.c_str());
             description = gcnew String(resource.description.c_str());
