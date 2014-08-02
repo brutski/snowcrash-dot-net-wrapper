@@ -11,7 +11,9 @@ Some modifications were necessary to fit my needs. Here is in particular what I 
 - [x] Update the wrapper to the latest snowcrash version
 - [x] Change configuration for Release version of DLL (it does not compile)
 - [ ] Make it compile on AppVeyorn
-- - [ ] Make it compile on AppVeyorn
-- - [ ] Make it compile on AppVeyorn- [ ] Make it compile on AppVeyorn
+- [ ] Create a nuget package and autopush on it
+- [ ] Find a way to make it AnyCPU compatible
+- [ ] Can we do something to support Mono and Unix as well?
+- [ ] Full managed implementation ?!
 
 
