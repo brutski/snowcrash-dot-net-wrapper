@@ -30,6 +30,11 @@ namespace snowcrashCLR {
             return location;
         }
 
+		~SourceAnnotation()
+		{
+			delete location;
+		}
+
         void wrap(const snowcrash::SourceAnnotation &source) {
             message = gcnew String(source.message.c_str());
             code = source.code;
@@ -83,6 +88,11 @@ namespace snowcrashCLR {
         ICollection<Warning^> ^GetWarningsCs() {
             return warnings;
         }
+
+		~Result()
+		{
+			delete warnings;
+		}
 
         void wrap(const snowcrash::Result &result){
             error = gcnew Error();

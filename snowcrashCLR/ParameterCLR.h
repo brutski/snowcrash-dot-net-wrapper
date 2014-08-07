@@ -32,6 +32,11 @@ namespace snowcrashCLR{
             return values;
         }
 
+		~Parameter()
+		{
+			delete values;
+		}
+
         void wrap(const snowcrash::Parameter &parameter) {
             name = gcnew String(parameter.name.c_str());
             description = gcnew String(parameter.description.c_str());

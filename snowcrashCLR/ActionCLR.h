@@ -14,7 +14,7 @@ namespace snowcrashCLR{
     /**
 	 *	CLR Wrapper for snowcrash::Action.
 	 */
-    public ref class Action {
+	public ref class Action {
     private:
         vector<Parameter^> ^parameters;
         vector<Header^> ^headers;
@@ -47,6 +47,13 @@ namespace snowcrashCLR{
         ICollection<TransactionExample^> ^GetTransactionExamplesCs() {
             return examples;
         }
+
+		~Action()
+		{
+			delete parameters;
+			delete headers;
+			delete examples;
+		}
 
         void wrap(const snowcrash::Action &action) {
             name = gcnew String(action.name.c_str());
@@ -83,6 +90,7 @@ namespace snowcrashCLR{
 				example->wrap(*examplesIterator);
                 examples->push_back(example);
 			}
+
         }
     };
 }

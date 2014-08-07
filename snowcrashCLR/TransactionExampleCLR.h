@@ -38,6 +38,12 @@ namespace snowcrashCLR {
             return responses;
         }
 
+		~TransactionExample()
+		{
+			delete responses;
+			delete requests;
+		}
+
         void wrap(const snowcrash::TransactionExample &transactionExample) {
             name = gcnew String(transactionExample.name.c_str());
             description = gcnew String(transactionExample.description.c_str());

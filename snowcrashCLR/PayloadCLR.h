@@ -39,6 +39,12 @@ namespace snowcrashCLR{
         ICollection<Header^> ^GetHeadersCs() {
             return headers;
         }
+
+		~Payload()
+		{
+			delete headers;
+			delete parameters;
+		}
         
         void wrap(const snowcrash::Payload &payload) {
             name = gcnew String(payload.name.c_str());
