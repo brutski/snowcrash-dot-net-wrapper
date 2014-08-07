@@ -23,8 +23,8 @@ in `Test->Test Settings->Select Test Settings File` Visual Studio menu.
 - [x] Change the submodule to use public repository URL
 - [x] Update the wrapper to the latest snowcrash version
 - [x] Change configuration for Release version of DLL (it does not compile, actually)
-- [x] Make it compile on AppVeyorn  [![Build status](https://ci.appveyor.com/api/projects/status/3d0a3hebo6u2jo1w)](https://ci.appveyor.com/project/XVincentX/snowcrash-dot-net-wrapper)
-- [x] Create a [nuget package](https://www.nuget.org/packages/Snowcrash.NET/) and autopush on it (**x86** only for now) [![Nuget counter](http://img.shields.io/nuget/dt/Snowcrash.NET.svg)](https://ci.appveyor.com/project/XVincentX/snowcrash-dot-net-wrapper)
+- [x] Make it compile on AppVeyorn  [![Build status](https://ci.appveyor.com/api/projects/status/3d0a3hebo6u2jo1w)](https://ci.appveyor.com/project/brutski/snowcrash-dot-net-wrapper)
+- [x] Create a [nuget package](https://www.nuget.org/packages/Snowcrash.NET/) and autopush on it (**x86** only for now) [![Nuget counter](http://img.shields.io/nuget/dt/Snowcrash.NET.svg)](https://ci.appveyor.com/project/brutski/snowcrash-dot-net-wrapper)
 - [x] Run a code analisys on the entire project (removed disposable warnings)
 
 
